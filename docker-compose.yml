@@ -46,9 +46,9 @@ services:
     links:
     - postgresql
     - redis
-    ports:
-    - "10080:80"
-    - "10022:22"
+#    ports:
+#    - "10080:80"
+#    - "10022:22"
     network_mode: "bridge"
     volumes:
     - "./srv/gitlab-config:/etc/gitlab"
@@ -73,9 +73,9 @@ services:
 #    - GITLAB_HTTPS=false
 #    - SSL_SELF_SIGNED=false
 
-    - GITLAB_HOST=localhost
-    - GITLAB_PORT=10080
-    - GITLAB_SSH_PORT=10022
+#    - GITLAB_HOST=localhost
+#    - GITLAB_PORT=10080
+#    - GITLAB_SSH_PORT=10022
 #    - GITLAB_RELATIVE_URL_ROOT=
 #    - GITLAB_SECRETS_DB_KEY_BASE=long-and-random-alphanumeric-string
 #    - GITLAB_SECRETS_SECRET_KEY_BASE=long-and-random-alphanumeric-string
