@@ -46,9 +46,6 @@ services:
     links:
     - postgresql
     - redis
-#    ports:
-#    - "10080:80"
-#    - "10022:22"
     network_mode: "bridge"
     volumes:
     - "./srv/gitlab-config:/etc/gitlab"
