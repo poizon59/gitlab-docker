@@ -68,9 +68,6 @@ services:
     - REDIS_HOST=redis
     - REDIS_PORT=6379
     
-    - GITLAB_PORT=81
-    - GITLAB_SSH_PORT=23
- 
 
   gitlab:
     restart: always
