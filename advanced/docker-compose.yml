@@ -53,9 +53,9 @@ services:
     - redis
     network_mode: "bridge"
     volumes:
-    - "./srv/gitlab-config:/etc/gitlab"
-    - "./srv/gitlab-data:/var/opt/gitlab"
-    - "./srv/gitlab-logs:/var/log/gitlab"
+    - "./srv2/gitlab-config:/etc/gitlab"
+    - "./srv2/gitlab-data:/var/opt/gitlab"
+    - "./srv2/gitlab-logs:/var/log/gitlab"
     environment:
 
     - DB_ADAPTER=postgresql
